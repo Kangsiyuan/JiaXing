@@ -12,7 +12,9 @@
     <script src="static/js/laydate.js"></script>
     <script src="static/js/Home_page.js"></script>
     <meta charset="UTF-8">
-    <title>河长制监督系统</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>城市内涝监督平台</title>
     <style>
         .aui_title{background-color: #407fff !important;height: 32px;line-height: 32px;font-weight: 700;font-size: 14px}
     </style>
@@ -109,7 +111,9 @@
                             </div>
                         </div>
                         <!--//仓库-1，加油站-2，派出所-3，危化品企业-4，学校-5，医疗卫生-6，应急避难场所-7-->
-                        <div class="map" id="divMap"></div>
+                        <!--
+                        <div class="map" id="container"></div>-->
+                        <div class="map" id="container"></div>
                         <!--地图显示信息选择-->
                         <div class="display_type_box display_box" style="display: none;overflow:auto">
                             <div class="display_type_center_box">
@@ -299,8 +303,15 @@
 <script src="static/js/Home_page.js"></script>
 <script src="static/js/artDialog.js"></script>
 <script src="static/js/iframeTools.source.js"></script>
+
+<!--调高德API-->
+<script src="https://webapi.amap.com/maps?v=2.0&key=367d7006fd2ffec9a32ef48c87129afe"></script>
+<script type="text/javascript" src="static/js/test.js"></script>
+
+<!--
 <script type="text/javascript" src="static/js/api.js"></script>
 <script src="static/js/mapNew.js"></script>
+-->
 
 <script>
    var number;
